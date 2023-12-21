@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Health_Page</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <article>
+          <img src="image/Logo.png" alt="Logo" />
+          <h1>For Individuals</h1>
+          <p class="write-up">
+            Start benefiting from the wellness experience. For companies looking
+            on increasing productivity, and improving organization wellness.
+          </p>
+        </article>
+
+        <form action="" method="post" class="form-container">
+          <div>
+            <div class="form-content">
+              <div>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Tolu" />
+              </div>
+              <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" required />
+              </div>
+            </div>
+            <div class="form-content">
+              <div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" required>
+                  <option disabled selected value="">Select here</option>
+                  <option value="male">male</option>
+                  <option value="female">female</option>
+                  <option value="others">others</option>
+                </select>
+              </div>
+              <div>
+                <label for="dateofbirth">Date of Birth</label>
+                <i class="fa-regular fa-calendar-days"></i>
+                <input
+                  type="text"
+                  name="dateofbirth"
+                  id="dateofbirth"
+                  placeholder="select here"
+                  onfocus="(this.type='date')"
+                  onblur="(this.type='text')"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-content">
+              <div>
+                <label for="weight">Weight (KG)</label>
+                <input
+                  type="text"
+                  name="weight"
+                  id="weight"
+                  placeholder="Enter Weight"
+                  required
+                />
+              </div>
+              <div>
+                <label for="height">Height (CM)</label>
+                <input
+                  type="text"
+                  name="height"
+                  id="height"
+                  placeholder="Enter height here.."
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <label for="activity">Activity Level</label>
+            <select name="activity" id="activity" class="full-lenght" required>
+              <option disabled selected value="">Select here</option>
+              <option value="male">Active</option>
+              <option value="female">Very Active</option>
+              <option value="others">Not Active</option>
+            </select>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="full-lenght"
+              required
+            />
+          </div>
+          <button type="submit">Register</button>
+          <p class="terms">
+            By clicking Register, you agree to our
+            <a href="#">Terms of Use</a> and our
+            <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
